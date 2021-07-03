@@ -1,0 +1,32 @@
+# BuildDataset
+
+Script to download the data and prepare the files
+
+## Content
+
+**Files**:
+
+* align.py : attempt to align the transcripts with aeneas (not used in the final project, ti does not work due to missing dependencies)
+* Dataset_integration.ipynb : notebook to merge Amara, TED and MuST-C. Inital filtering
+* EvalData.ipynb : notebook to filter the dataset and compute some statistic (can contain old/incorrect code)
+* Extractive.csv : information about extractive fragments
+* Filtering_test.csv : intermediate file generated during the filtering
+* Filtering_train.csv : intermediate file generated during the filtering
+* *_coverage_*_density_examples.[json|txt] : example of summaries sampled in different values of coverage and density, with the pre-trained model
+* integrated_data.csv : table with the merged data, contains information about the source of the talks and which data is available
+* prepare_kenlm.py : generate files to train a KenLM n-gram model (not used in the final project)
+* recompute_stats.ipynb : compute some stats used in the paper
+* Rasample.ipynb : old notebook used to resample the talks
+* rouge_transcript_hyp.csv : ROUGE between the transcript and the summary
+* split_audio.py : retrieve and split the talks, generate pickle files that pairs the fragments and the transcripts
+* split_audio_job.sh : script to run split_audio.py
+* split_on_silence.py : retrieve and split the talks on silence, generate pickle files that pairs the fragments and the transcripts
+* split_silence.sh : script to run split_on_silence.py
+* ted_align.sh : run align.py
+
+**Folders**:
+
+* Amara : notebooks to download from Amara and files to retrieve the talks
+* TED : notebooks to download from TED and files to retrieve the talks
+* prepared_data : pickle files used to train Pegasus
+* DATA : folder structure of original dataset. The actual talks are not present. There are csv files woth some metadata
