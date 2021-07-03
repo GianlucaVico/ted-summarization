@@ -69,13 +69,18 @@ Other Python packages are installed automatically to fulfil these requirements.
 * flashlight python binding : compiled with CUDA, MKL and KenLM support, KENLM_ROOT is the base folder of KenLM (not the build folder), not used in the final work
     * It has other requirements already fulfilled on the Aachen cluster.
 
-
 **Data and models**:
 
 * The fine-tuned models are momentaneary available [here](https://drive.google.com/drive/folders/1HBFSfHxpBoII7FlhbYcuHDCGhONAe8xD?usp=sharing)
 * TED is not longer using Amara (since end of 2020), therefore, the talks from Amara might no longer be available
 * MuST-C is can be downloaded from their [site](https://ict.fbk.eu/must-c/)
 * The talks from TED are downloaded directly from their [website](https://www.ted.com/) by using the script contained here
+
+## Copyright information
+
+TED talks are copyrighted by TED Conference LLC and licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 4.0 
+(see [https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy](https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy)) 
+
 
 ## Author
 Gianluca Vico [gianlucavico99@gmail.com](mailto:gianluca.vico99@gmail.com)
